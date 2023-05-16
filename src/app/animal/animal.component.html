@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card mt-5">
+        <div class="card-header">
+          <h3 class="text-center">{{ title }}</h3>
+        </div>
+        <div class="card-body">
+          <div class="row justify-content-center mb-4">
+            <img [src]="imageUrl" alt="Animal Image" class="img-fluid">
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <ul class="list-group">
+                <li class="list-group-item"><strong>Breed:</strong> {{ breed }}</li>
+                <li class="list-group-item"><strong>Life Span:</strong> {{ lifeSpan }}</li>
+                <li class="list-group-item"><strong>Weight:</strong> {{ weight }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

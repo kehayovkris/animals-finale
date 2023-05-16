@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+ selector: 'app-root',
+ template: `
+  <nav>
+    <a routerLink="/dogs" routerLinkActive="active">Dogs</a>
+    <a routerLink="/cats" routerLinkActive="active">Cats</a>
+    <a routerLink="/birds" routerLinkActive="active">Birds</a>
+  </nav>
+
+   <main>
+     <router-outlet></router-outlet>
+   </main>
+ `,
 })
-export class AppComponent {
-  title = 'animals-finale';
-}
+export class AppComponent {}
